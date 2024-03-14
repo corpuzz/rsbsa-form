@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans', 'Segoe UI', sans-serif;
+}
+
+/* CAREFUL TOUCHING ME, narigat isimpa nu makuti :) */
+body {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+}
+
+
+
+/* CAREFUL TOUCHING ME, narigat isimpa nu makuti :) */
+form {
+    background-color: #ffffff;
+    width: 1000px;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* CAREFUL TOUCHING ME, narigat isimpa nu makuti :) */
+.container,
+.part1a-container,
+.part1b-container,
+.part1c-container,
+.part1d-container,
+.part1e-container,
+.part1f-container,
+.part1g-container,
+.part1h-container {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* CAREFUL TOUCHING ME, narigat isimpa nu makuti :) */
+.input-group {
+    margin: 0.6rem 0;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+}
+
+@media (max-width: 700px) {
+    .input-group {
+        width: 100%;
+        flex: 1 1 100%;
+    }
+
+    .part1d-container,
+    .part1e-container {
+        gap: 0;
+    }
+}
+
+/* CAREFUL TOUCHING ME, narigat isimpa nu makuti :) */
+.part1c-container .input-group {
+    flex: 1 1 31%;
+}
+
+/* CAREFUL TOUCHING ME, narigat isimpa nu makuti :) */
+.part1c-container {
+    justify-content: space-between;
+    gap: 0 1rem;
+
+}
+
+hr {
+    margin: 1rem 0;
+    background-color: #a2a2a2;
+    height: 2.5px;
+
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 8pt;
+    font-weight: 700;
+    color: #888;
+}
+
+input,
+select {
+    padding: 7px;
+    border-radius: 4px;
+    outline: none;
+    border: 2px solid rgb(193, 193, 193);
+}
+
+input:hover,
+select:hover {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    border: 2px solid aqua;
+}
+
+.p1i {
+    gap: 0;
+}
+
+.p1i .input-group {
+    flex-basis: 100%;
+}
+
+/* PART 2 Styling */
+
+.profile {
+    height: 3rem;
+}
+
+.profile .input-group label {
+    height: 25px;
+
+}
+.checkbox-group {
+    text-align: center;
+    height: 40px;
+}
+
+.checkbox-group label{
+
+}
+
+.checkbox-group input {
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+}
+.profile2 {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 0 2rem;
+}
+
+.profile2 p {
+    margin: 0;
+    word-break: keep-all;
+    text-align: justify;
+}
+
+.profile2 #profile2-child1 {
+    flex: 1 1 226px;
+
+}
+
+.profile2 #profile2-child2 {
+    flex: 2 1 48%;
+
+}
+
+.profile2 #profile2-child3 {
+    flex: 1 1 226px;
+
+}
+
+#scissor-div {
+    margin: 2rem 0;
+    border-bottom: 3px dashed #888;
+}
+
+.account {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.registerbtn {
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+
+}
+
+.registerbtn {
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    font-weight: 600;
+    color: #f6f6f6;
+    background-color: rgb(38, 176, 38);
+    border: none;
+    cursor: pointer;
+}
+
+.registerbtn:focus {
+    background-color: #86f948;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.registerbtn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    background-color: #47e432;
+}
+
+.registerbtn:active {
+    background-color: #28ff0c;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
+}

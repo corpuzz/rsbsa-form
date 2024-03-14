@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Account Registration</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <form class="form">
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <!-- PART 1 -->
+    <div class="part1-container">
+      <p>PART I. PERSONAL INFORMATION</p>
+      <!-- PART 1a | Name section -->
+      <div class="part1a-container">
+        <div class="input-group">
+          <label for="firstName">FIRST NAME:</label>
+          <input type="text" placeholder="Enter Firstname" name="firstName" id="firstName" required>
+        </div>
+
+        <div class="input-group">
+          <label for="middleName">MIDDLE NAME:</label>
+          <input type="text" placeholder="Enter Middlename" name="middleName" id="middleName" required>
+        </div>
+
+        <div class="input-group">
+          <label for="surname">SURNAME:</label>
+          <input type="text" placeholder="Enter Surname" name="surname" id="surname" required>
+        </div>
+        <div class="extension-name input-group">
+          <label for="extensionName">EXTENSION NAME:</label>
+          <input type="text" placeholder="Enter Extension Name" name="extensionName" id="extensionName" required>
+        </div>
+
+      </div>
+
+      <!-- Part 1b | Ext. name and gender section -->
+      <div class="part1b-container">
+        <div class="input-group">
+          <label for="gender">GENDER:</label>
+          <select name="gender">
+            <option value="male">MALE:</option>
+            <option value="female">FEMALE:</option>
+          </select>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Part 1c | Permanent address section -->
+      <p>PERMANENT ADDRESS</p>
+      <div class="part1c-container">
+
+        <div class="input-group">
+          <label for="HOUSE/LOT/BLDG NO/PUROK">HOUSE/LOT/BLDG NO/PUROK:</label>
+          <input type="text" id="permanent address" required>
+        </div>
+
+        <div class="input-group">
+          <label for="STREET/SITIO/SUBDIVISION">STREET/SITIO/SUBDIVISION:</label>
+          <input type="text" id="permanent address" required>
+        </div>
+
+        <div class="input-group">
+          <label for="BARANGAY">BARANGAY:</label>
+          <input type="text" id="permanent address" required>
+        </div>
+
+        <div class="input-group">
+          <label for="CITY/MUNICIPALITY">CITY/MUNICIPALITY:</label>
+          <input type="text" id="permanent address" required>
+        </div>
+
+        <div class="input-group">
+          <label for="PROVINCE">PROVINCE:</label>
+          <input type="text" id="permanent address" required>
+        </div>
+
+        <div class="input-group">
+          <label for="REGION"><b>REGION:</b></label>
+          <input type="text" id="permanent address" required>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Part 1c | NCR Address -->
+      <p>Answer only if declared permanent address is NCR:</p>
+      <div class="part1c-container">
+
+        <div class="input-group">
+          <label for="HOUSE/LOT/BLDG NO/PUROK">HOUSE/LOT/BLDG NO/PUROK:</label>
+          <input type="text" id="permanent address" required>
+        </div>
+
+        <div class="input-group">
+          <label for="STREET/SITIO/SUBDIVISION">STREET/SITIO/SUBDIVISION:</label>
+          <input type="text" id="permanent address" required>
+        </div>
+
+        <div class="input-group">
+          <label for="BARANGAY">BARANGAY:</label>
+          <input type="text" id="permanent address" required>
+        </div>
+
+        <div class="input-group">
+          <label for="CITY/MUNICIPALITY">CITY/MUNICIPALITY:</label>
+          <input type="text" id="permanent address" required>
+        </div>
+
+        <div class="input-group">
+          <label for="PROVINCE">PROVINCE:</label>
+          <input type="text" id="permanent address" required>
+        </div>
+
+        <div class="input-group">
+          <label for="REGION"><b>REGION:</b></label>
+          <input type="text" id="permanent address" required>
+        </div>
+      </div>
+
+      <hr>
+
+
+      <!-- Part 1e | Birth information -->
+      <p>PLACE OF BIRTH</p>
+      <div class="part1e-container">
+        <div class="input-group">
+          <label>DATE OF BIRTH</label>
+          <input type="date" name="Birthdate" placeholder="Input your birthdate" required>
+        </div>
+
+        <div class="input-group">
+          <label for="MUNICIPALITY">MUNICIPALITY:</label>
+          <input type="text" id="municipality" required>
+        </div>
+
+        <div class="input-group">
+          <label for="PROVINCE">PROVINCE/STATE:</label>
+          <input type="text" id="province" required>
+        </div>
+
+        <div class="input-group">
+          <label for="country">COUNTRY:</label>
+          <input type="text" id="country" required>
+        </div>
+      </div>
+
+      <hr>
+      <!-- Part 1d | Number section -->
+      <div class="part1d-container">
+        <div class="input-group">
+          <label for="mobile-number">MOBILE NUMBER:</label>
+          <input type="number" placeholder="Enter mobile number" name="mobile-number" id="mobileNumber" required>
+          <div class="input-group">
+            <label for="cp-number">Do you own the mobile number written above? (Ikaw ba ang nagmamay-ari ng numero sa
+              itaas?)</label>
+            <select name="cp-number">
+              <option value="one">YES</option>
+              <option value="two">NO</option>
+            </select>
+            <p>If No, fullname and relationship with owner of number:</p>
+            <div class="input-group">
+              <label for="FULLNAME"><b>FULLNAME</b></label>
+              <input type="text" placeholder="Enter fullname" name="fullname" id="fullname" required>
+            </div>
+
+            <div class="input-group">
+              <label for="RELATIONSHIP"><b>RELATIONSHIP</b></label>
+              <input type="text" placeholder="Enter relationship" name="relationship" id="relationship" required>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Part 1f | Mother's name -->
+    <p>MOTHER'S MAIDEN NAME</p>
+    <div class="part1f-container">
+      <div class="input-group">
+        <label for="firstName">FIRST NAME:</label>
+        <input type="text" placeholder="Enter Firstname" name="firstName" id="firstName" required>
+      </div>
+
+      <div class="input-group">
+        <label for="middleName">MIDDLE NAME:</label>
+        <input type="text" placeholder="Enter Middlename" name="middleName" id="middleName" required>
+      </div>
+
+      <div class="input-group">
+        <label for="surname">SURNAME:</label>
+        <input type="text" placeholder="Enter Surname" name="surname" id="surname" required>
+      </div>
+      <div class="extension-name input-group">
+        <label for="extensionName">EXTENSION NAME:</label>
+        <input type="text" placeholder="Enter Extension Name" name="extensionName" id="extensionName" required>
+      </div>
+    </div>
+
+
+    <hr>
+    <!-- Part 1g | Religion -->
+    <div class="part1g-container">
+      <div class="input-group">
+        <label for="RELIGION"><b>RELIGION</b></label>
+        <select name="RELIGION">
+          <option value="one">Christianity</option>
+          <option value="two">Islam</option>
+          <option value="three">Others</option>
+          <option value="four">None</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="CIVIL STATUS"><b>CIVIL STATUS</b></label>
+        <select name="Civil Status">
+          <option value="one">Single</option>
+          <option value="two">Married</option>
+          <option value="three">Widow/er</option>
+          <option value="four">Legally Separated</option>
+        </select>
+      </div>
+
+    </div>
+
+    <!-- Part 1h | Spouse name -->
+    <p>Name of spouse if married:</p>
+    <div class="part1h-container">
+      <div class="input-group">
+        <label for="firstName">FIRST NAME:</label>
+        <input type="text" placeholder="Enter Firstname" name="firstName" id="firstName" required>
+      </div>
+
+      <div class="input-group">
+        <label for="middleName">MIDDLE NAME:</label>
+        <input type="text" placeholder="Enter Middlename" name="middleName" id="middleName" required>
+      </div>
+
+      <div class="input-group">
+        <label for="surname">SURNAME:</label>
+        <input type="text" placeholder="Enter Surname" name="surname" id="surname" required>
+      </div>
+      <div class="extension-name input-group">
+        <label for="extensionName">EXTENSION NAME:</label>
+        <input type="text" placeholder="Enter Extension Name" name="extensionName" id="extensionName" required>
+      </div>
+    </div>
+
+    <div class="input-group">
+      <label for="rsbsa-number">RSBSA Number (system-generated) if registered:</label>
+      <input type="number" placeholder="" name="rsbsa-number" id="rsbsaNumber" required>
+    </div>
+
+    <hr>
+
+    <div class="input-group">
+      <label for="ICC"><b>PART OF INDIGENOUS CULTURAL COMMUNITY(ICC)/INDIGENOUS PEOPLES(IPS):</b></label>
+      <select name="ICC/IPS">
+        <option value="one">YES</option>
+        <option value="two">NO</option>
+      </select>
+
+    </div>
+
+    <hr>
+
+
+    <div class="input-group">
+      <label for="education"><b>HIGHEST FORMAL EDUCATION (PINAKAMATAAS NA ANTAS NG PINAG-ARALAN):</b></label>
+      <select name="education">
+        <option value="one">Pre-school</option>
+        <option value="two">Elementary</option>
+        <option value="two">High School(non K-12)</option>
+        <option value="two">Junior High School(K-12)</option>
+        <option value="two">Senior High School(K-12)</option>
+        <option value="two">College</option>
+        <option value="two">Post-graduate</option>
+        <option value="two">Vocational</option>
+        <option value="two">None</option>
+      </select>
+    </div>
+
+    <hr>
+
+    <p>SUBMITTED VALID PROOF OF IDENTITY (ISINUMITENG KATIBAYAN NG PAGKATAO):</p>
+    <div class="input-group">
+
+
+      <div class="container">
+        <div class="input-group">
+          <label for="ID"><b>ID/Document Type</b></label>
+          <select name="education">
+            <option value="one">Pre-school</option>
+            <option value="two">Elementary</option>
+            <option value="two">High School(non K-12)</option>
+            <option value="two">Junior High School(K-12)</option>
+            <option value="two">Senior High School(K-12)</option>
+            <option value="two">College</option>
+            <option value="two">Post-graduate</option>
+            <option value="two">Vocational</option>
+            <option value="two">None</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="ID/NUMBER"><b>ID/Document Number</b></label>
+          <input type="number" placeholder="id/number" name="id/number" id="id/number" required>
+        </div>
+
+      </div>
+
+    </div>
+    <hr>
+
+    <!--  -->
+    <div class="container">
+      <div class="input-group">
+        <label for="pwd">PERSON WITH DISABILITY (PWD):</label>
+        <label for="">ㅤ</label>
+        <select name="pwd">
+          <option value="two">NO</option>
+          <option value="one">YES</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="4Ps">4Ps Beneficiary:</label>
+        <label for="4Ps">(DSWD Pantawid Pamilyang Pilipino Program)</label>
+        <select name="4Ps">
+          <option value="one">YES</option>
+          <option value="two">NO</option>
+        </select>
+      </div>
+
+
+    </div>
+
+
+    <hr>
+    <p>MEMBERSHIP IN FARMERS or IRRIGATORS ASSOCIATION/ COOPERATIVE/ ORGANIZATION: FCA/ IA/ Organization Names:</p>
+    <div class="container p1i">
+      <div class="input-group">
+        <label for="1"></label>
+        <input type="text" placeholder="1" name="1" id="1" required>
+      </div>
+
+      <div class="input-group">
+        <label for="2"></label>
+        <input type="text" placeholder="2" name="2" id="2" required>
+      </div>
+
+      <div class="input-group">
+        <label for="3"></label>
+        <input type="text" placeholder="3" name="3" id="3" required>
+      </div>
+    </div>
+
+    <hr>
+    <p>PART II. LIVELIHOOD PROFILE</p>
+    <div class="container profile">
+      <div class="input-group">
+        <div class="checkbox-group">
+          <input type="checkbox" id="farmers-checkbox" name="farmers-checkbox" />
+          <label for="farmers"><b>FARMERS</b></label>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <div class="checkbox-group">
+          <input type="checkbox" id="farm-worker-checkbox" name="farm-worker-checkbox" />
+          <label for="farm-worker-checkbox">FARM WORKER (MANGGAGAWA SA SAKAHAN)</label>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <div class="checkbox-group">
+          <input type="checkbox" id="farm-worker-checkbox" name="farm-worker-checkbox" />
+          <label for="fisher"><b>FISHER (MANGINGISDA)</b></label>
+        </div>
+      </div>
+      <div class="input-group">
+        <div class="checkbox-group">
+          <input type="checkbox" id="farm-worker-checkbox" name="farm-worker-checkbox" />
+          <label for="farmers"><b>AGRI-YOUTH</b></label>
+        </div>
+      </div>
+    </div>
+
+    <div class="profile2">
+      <p id="profile2-child1">If you are a FARMER, proceed to PART 3 (Kung ikaw ay MAGSASAKA, sagutan ang PART 3).</p>
+      <p id="profile2-child2">If you are a FARM WORKER or FISHER, kindly request a CERTIFICATION AS FARM WORKER/FISHER
+        from
+        the City/Municipal Agriculture Office (Mag-request ng SERTIPIKASYON BILANG MANGGAGAWA SA SAKAHAN/MANGINGISDA
+        mula sa City/Municipal Agriculture Office).</p>
+      <p id="profile2-child3">If you are an AGRI-YOUTH proceed to PART 4 (Kung ikaw ay AGRI-YOUTH, sagutan ang PART 4).
+      </p>
+    </div>
+
+
+
+
+    <div id="scissor-div"></div>
+    <!--  -->
+
+
+    <p>REGISTRY SYSTEM FOR BASIC SECTORS IN AGRICULTURE</p>
+    <h1>RSBSA Enrollment Stub:Client's Copy</h1>
+    <label for="enrollee">NAME OF ENROLLEE:</label>
+    <div class="container" name="enrollee">
+      <div class="input-group">
+        <label for="firstName">FIRST NAME:</label>
+        <input type="text" placeholder="Enter Firstname" name="firstName" id="firstName" required>
+      </div>
+
+      <div class="input-group">
+        <label for="middleName">MIDDLE NAME:</label>
+        <input type="text" placeholder="Enter Middlename" name="middleName" id="middleName" required>
+      </div>
+
+      <div class="input-group">
+        <label for="surname">SURNAME:</label>
+        <input type="text" placeholder="Enter Surname" name="surname" id="surname" required>
+      </div>
+      <div class="extension-name input-group">
+        <label for="extensionName">EXTENSION NAME:</label>
+        <input type="text" placeholder="Enter Extension Name" name="extensionName" id="extensionName" required>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="input-group">
+        <label for="transaction">TRANSACTION CODE:</label>
+        <input type="text" name="transaction" id="transaction" required>
+      </div>
+    </div>
+
+    <hr>
+    <div class="p1i">
+      <div class="input-group">
+        <label for="email">EMAIL:</label>
+        <input type="email" placeholder="" name="email" id="email" required>
+      </div>
+
+      <div class="input-group">
+        <label for="password">PASSWORD:</label>
+        <input type="password" placeholder="" name="password" id="password" required>
+      </div>
+
+      <div class="input-group">
+        <label for="rpassword">REPEAT PASSWORD:</label>
+        <input type="password" placeholder="" name="rpassword" id="rpassword" required>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="account">
+        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+        <button type="submit" class="registerbtn">Register</button>
+        <div class="signin">
+          <p>Already have an account? <a href="#">Sign in</a>.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </form>
+</body>
+
+</html>
